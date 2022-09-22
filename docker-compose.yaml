@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    volumes:
+      - .:/workspace:rw
+      - /workspace/node_modules
+    command: yarn dev
+    environment:
+      PORT: 8080
+      NODE_ENV: development
+    ports:
+      - 8888:8080
+      - 9999:9229
