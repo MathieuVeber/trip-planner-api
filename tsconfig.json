@@ -1,0 +1,20 @@
+{
+  // https://stackoverflow.com/a/67371788
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "forceConsistentCasingInFileNames": true,
+    "lib": [
+      "ES2021"
+    ],
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2021",
+  },
+  "include": [
+    "src"
+  ],
+}

@@ -1,0 +1,28 @@
+{
+  "name": "trip-planner-api",
+  "version": "0.0.0",
+  "author": "Mathieu Veber <math.veber@gmail.com>",
+  "license": "UNLICENSED",
+  "main": "./dist",
+  "private": false,
+  "repository": "https://github.com/MathieuVeber/trip-planner-api.git",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch | nodemon start",
+    "start": "node ./dist"
+  },
+  "engines": {
+    "node": "^16.11.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/node": "^16.11.0",
+    "nodemon": "^2.0.20",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
