@@ -1,7 +1,8 @@
 import express from 'express'
 
+const PORT = process.env.PORT || ''
 const server = express()
 
-server.listen(process.env.PORT, async () => {
-  console.log(`Trip Planner API listening on port ${process.env.PORT}`)
+server.listen(PORT, () => {
+  console.log(`Trip Planner API listening on port ${PORT}`)
 })

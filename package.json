@@ -12,6 +12,8 @@
     "dev": "tsc --watch | nodemon start",
     "format": "yarn prettier --write .",
     "format:check": "yarn prettier --check .",
+    "lint": "yarn eslint --fix .",
+    "lint:check": "yarn eslint .",
     "start": "node ./dist"
   },
   "engines": {
