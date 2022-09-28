@@ -1,0 +1,34 @@
+openapi: 3.0.3
+
+info:
+  title: Trip Planner API
+  version: 0.0.0
+  contact:
+    name: Mathieu Veber
+    email: math.veber@gmail.com
+
+servers:
+  - url: http://localhost:8888
+    description: Local Development
+
+paths:
+  /health:
+    get:
+      summary: Health Check
+      description: Use this endpoint to monitor the server status and its potential downtimes
+      responses:
+        '200':
+          description: An object with server health information
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  uptime:
+                    type: integer
+                    example: 60
+                    description: Number of seconds since the server is up
+                  serverTime:
+                    type: string
+                    format: date-time
+                    description: Current server's date

@@ -5,7 +5,7 @@ const server = express()
 
 server.get('/health', (req: Request, res: Response) => {
   const data = {
-    uptime: process.uptime(),
+    uptime: Math.floor(process.uptime()),
     currentTime: new Date(),
   }
 
