@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express'
 import cors from 'cors'
 
-const PORT = process.env.PORT || ''
+const PORT = process.env.PORT || 8080
 const server = express()
 
 server.use(cors())
