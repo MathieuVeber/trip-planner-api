@@ -9,12 +9,12 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch | nodemon start",
+    "dev": "tsc --watch | nodemon .",
     "format": "yarn prettier --write .",
     "format:check": "yarn prettier --check .",
     "lint": "yarn eslint --fix .",
     "lint:check": "yarn eslint .",
-    "start": "node ./dist"
+    "start": "node ."
   },
   "engines": {
     "node": "^16.11.0"
