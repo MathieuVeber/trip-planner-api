@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "trip-planner-api",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "port": 9999,
+      "remoteRoot": "/workspace",
+      "request": "attach",
+      "sourceMaps": true,
+      "type": "node"
+    }
+  ],
+  "version": "0.2.0"
+}
